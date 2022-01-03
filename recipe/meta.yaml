@@ -1,5 +1,5 @@
 {% set name = "xsar" %}
-{% set version = "0.5.1" %}
+{% set version = "0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,16 +7,16 @@ package:
 
 source:
   url: https://github.com/umr-lops/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 50e6c42d7b8463a9685fe05fe36bf47470de8290e007daebbcefca0db5d6ec67
+  sha256: a0dd366eb061aab2cf6935cdec82e8af7666aa2a773d1636183a173f8a8ed1ca
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - setuptools_scm
     - setuptools_scm_git_archive
     - pip
@@ -36,15 +36,15 @@ requirements:
     - setuptools_scm
     - setuptools_scm_git_archive
     - xarray
-    - python >=3.6
+    - rioxarray
+    - python >=3.7
 
 test:
   imports:
     - xsar
 
 about:
-  description: xsar is a distributed level 1 SAR file reader designed to write efficient
-    distributed processing algorhitm with xarray and dask.
+  description: xsar is a distributed level 1 SAR file reader designed to write efficient distributed processing algorhitm with xarray and dask.
   dev_url: https://github.com/umr-lops/xsar
   doc_url: https://cyclobs.ifremer.fr/static/sarwing_datarmor/xsar/index.html
   home: https://github.com/umr-lops/xsar
