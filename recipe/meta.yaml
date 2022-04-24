@@ -37,7 +37,8 @@ requirements:
     - setuptools_scm_git_archive
     - xarray
     - rioxarray
-    - python >=3.7
+    - shapely
+    - python >=3.7,<3.10
 
 test:
   imports:
