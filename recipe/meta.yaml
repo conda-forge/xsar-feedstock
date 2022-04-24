@@ -25,7 +25,7 @@ requirements:
     - attrs
     - cartopy >=0.19.0
     - dask >=2021.6.2
-    - gdal >=3.2.1
+    - gdal >=3.3
     - geopandas
     - importlib_resources
     - jmespath
