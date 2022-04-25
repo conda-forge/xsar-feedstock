@@ -1,5 +1,5 @@
 {% set name = "xsar" %}
-{% set version = "0.6" %}
+{% set version = "0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/umr-lops/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: a0dd366eb061aab2cf6935cdec82e8af7666aa2a773d1636183a173f8a8ed1ca
+  sha256: a68663f287895e2fa6c8c57cd19412c8570cf1d8b8a31f1ffa316d0a75fc1c28
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
     - attrs
     - cartopy >=0.19.0
     - dask >=2021.6.2
-    - gdal >=3.2.1
+    - gdal >=3.3
     - geopandas
     - importlib_resources
     - jmespath
