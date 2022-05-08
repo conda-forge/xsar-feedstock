@@ -39,6 +39,7 @@ requirements:
     - rioxarray >=0.10
     - fiona
     - tbb
+    - requests
     - shapely
     - python >=3.7
 
