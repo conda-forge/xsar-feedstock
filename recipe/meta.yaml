@@ -1,5 +1,5 @@
 {% set name = "xsar" %}
-{% set version = "0.7" %}
+{% set version = "0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/umr-lops/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: a68663f287895e2fa6c8c57cd19412c8570cf1d8b8a31f1ffa316d0a75fc1c28
+  sha256: 89fa5c68942bf50c27a6d6ae7511fca0226aa78aae80f4cf68a390b72ff372f7
 
 build:
   number: 0
@@ -16,13 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - setuptools_scm
     - setuptools_scm_git_archive
     - pip
   run:
     - aiohttp
-    - attrs
     - cartopy >=0.19.0
     - dask >=2021.6.2
     - gdal >=3.3
@@ -31,14 +30,13 @@ requirements:
     - jmespath
     - lxml
     - more-itertools
-    - pyproj
     - rasterio >=1.2.6
     - setuptools_scm
     - setuptools_scm_git_archive
     - xarray
-    - rioxarray
-    - shapely
-    - python >=3.7,<3.10
+    - rioxarray >=0.10
+    - pandoc
+    - python >=3.8
 
 test:
   imports:
