@@ -1,5 +1,5 @@
 {% set name = "xsar" %}
-{% set version = "0.8.1" %}
+{% set version = "0.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/umr-lops/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: f46372cab6dba4f570d56ba96f20390afb6562f30caa4e6b5d64cbc6ef92ce59
+  sha256: 55f87af1f1a3b6b633580dbca2012626410600e0b58693192f2ca0ddf5337bbb
 
 build:
   number: 0
