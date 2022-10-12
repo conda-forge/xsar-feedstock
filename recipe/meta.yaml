@@ -7,8 +7,8 @@ package:
 
 source:
   url: https://github.com/umr-lops/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 6d51c3b835e37bd7d69a0422d6c9032fdebc181e6a814928e36336b1dea6f5f9
-
+  sha256: d69fe92e1e7294f4f984dbddfeb5e04657f5c64d211aa411ea7f72ea1cfcc42a
+  
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
