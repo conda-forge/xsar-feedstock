@@ -1,5 +1,5 @@
 {% set name = "xsar" %}
-{% set version = "0.8.3" %}
+{% set version = "0.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,8 +7,8 @@ package:
 
 source:
   url: https://github.com/umr-lops/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: d69fe92e1e7294f4f984dbddfeb5e04657f5c64d211aa411ea7f72ea1cfcc42a
-  
+  sha256: 34fc8b7d47ec4120be5d9a28454950a226ca7ccd31ef01bdd3d90c0ec3e9f7e6
+
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
