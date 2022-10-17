@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/umr-lops/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 34fc8b7d47ec4120be5d9a28454950a226ca7ccd31ef01bdd3d90c0ec3e9f7e6
+  sha256: 221f886d6111ab197d5b8d0b06d2233bdf6c60e58f4b56791b32849a376a13a6
 
 build:
   number: 0
@@ -30,12 +30,13 @@ requirements:
     - jmespath
     - lxml
     - more-itertools
-    - rasterio >=1.2.6
+    - rasterio >=1.2.6,<=1.3.0.post1
     - setuptools_scm
     - setuptools_scm_git_archive
     - xarray
     - rioxarray >=0.10
     - pandoc
+    - xarray-datatree
     - python >=3.8
 
 test:
@@ -43,7 +44,7 @@ test:
     - xsar
 
 about:
-  description: xsar is a distributed level 1 SAR file reader designed to write efficient distributed processing algorhitm with xarray and dask.
+  description: xsar is a level-1 SAR file reader designed to perform efficient distributed processing algorithm with xarray and dask.
   dev_url: https://github.com/umr-lops/xsar
   doc_url: https://cyclobs.ifremer.fr/static/sarwing_datarmor/xsar/index.html
   home: https://github.com/umr-lops/xsar
