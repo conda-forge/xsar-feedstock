@@ -13,7 +13,7 @@ Development: https://github.com/umr-lops/xsar
 
 Documentation: https://cyclobs.ifremer.fr/static/sarwing_datarmor/xsar/index.html
 
-xsar is a distributed level 1 SAR file reader designed to write efficient distributed processing algorhitm with xarray and dask.
+xsar is a level-1 SAR file reader designed to perform efficient distributed processing algorithm with xarray and dask.
 
 Current build status
 ====================
