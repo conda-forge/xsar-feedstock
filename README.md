@@ -1,11 +1,11 @@
-About xsar
-==========
+About xsar-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xsar-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/umr-lops/xsar
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xsar-feedstock/blob/main/LICENSE.txt)
 
 Summary: xsar is a distributed level 1 SAR file reader
 
