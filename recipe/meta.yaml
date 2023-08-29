@@ -21,6 +21,7 @@ requirements:
     - setuptools_scm_git_archive
     - pip
   run:
+    - python >=3.8
     - GDAL
     - dask[array]
     - distributed
