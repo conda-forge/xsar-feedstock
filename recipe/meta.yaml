@@ -1,13 +1,13 @@
 {% set name = "xsar" %}
-{% set version = "0.9" %}
+{% set version = "2023.8.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/umr-lops/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 221f886d6111ab197d5b8d0b06d2233bdf6c60e58f4b56791b32849a376a13a6
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xsar-{{ version }}.tar.gz
+  sha256: 8d9e95f4d0ae95a7bf9a0094ab7d43e6b81320370ab1fc39d47eff75155df2c3
 
 build:
   number: 0
