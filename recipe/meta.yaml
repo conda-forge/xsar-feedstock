@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3.8
     - GDAL
-    - dask[array]
+    - dask
     - distributed
     - xarray
     - affine
