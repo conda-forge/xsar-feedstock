@@ -1,5 +1,5 @@
 {% set name = "xsar" %}
-{% set version = "2023.9.0" %}
+{% set version = "2024.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xsar-{{ version }}.tar.gz
-  sha256: c8effea4d9d054b79fbae3d81e065f6d552dcbb36b31b922d8f0b2a675a8d545
+  sha256: ffc1f27e088f598191f034c476a0fc11761eab7ca836556497623393bca2095d
 
 build:
   number: 0
@@ -42,6 +42,7 @@ requirements:
     - psutil
     - jinja2
     - rioxarray
+    - lxml
 
 test:
   imports:
