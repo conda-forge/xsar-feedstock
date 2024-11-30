@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xsar-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/xsar-{{ version }}.tar.gz
   sha256: 5b511cdee0e8334f307bf6dcb00574801d5a41a82a4d5a2088f563de277dff3a
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools_scm
     - setuptools_scm_git_archive
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - GDAL
     - dask
     - distributed
@@ -45,6 +45,8 @@ requirements:
     - lxml
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - xsar
 
