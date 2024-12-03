@@ -1,5 +1,5 @@
 {% set name = "xsar" %}
-{% set version = "2024.12.03" %}
+{% set version = "2024.12.3" %}
 
 package:
   name: {{ name|lower }}
