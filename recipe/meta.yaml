@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xsar-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/xsar-{{ version }}.tar.gz
   sha256: 807788c87bab06e0781a2cb1229ded93da18d6a2b3fb3ee87c29c5dbcf5ecad6
 
 build:
