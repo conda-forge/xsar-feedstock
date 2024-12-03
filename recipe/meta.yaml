@@ -1,5 +1,5 @@
 {% set name = "xsar" %}
-{% set version = "2024.11.18" %}
+{% set version = "2024.12.03" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xsar-{{ version }}.tar.gz
-  sha256: 5b511cdee0e8334f307bf6dcb00574801d5a41a82a4d5a2088f563de277dff3a
+  sha256: 807788c87bab06e0781a2cb1229ded93da18d6a2b3fb3ee87c29c5dbcf5ecad6
 
 build:
   number: 0
@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.10
     - setuptools_scm
     - setuptools_scm_git_archive
     - pip
   run:
-    - python >=3.8
+    - python >=3.10
     - GDAL
     - dask
     - distributed
