@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "xsar" %}
-{% set version = "2024.12.3" %}
+{% set version = "2025.3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/xsar-{{ version }}.tar.gz
-  sha256: 807788c87bab06e0781a2cb1229ded93da18d6a2b3fb3ee87c29c5dbcf5ecad6
+  sha256: 17a2fd363524c9c650c71800872717696746d3b2e9dd6e9939d125f34cb9e269
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
