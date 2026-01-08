@@ -32,7 +32,6 @@ requirements:
     - cartopy
     - fiona
     - pyproj
-    - xarray-datatree >=0.0.9
     - numpy
     - scipy
     - shapely
@@ -44,7 +43,7 @@ requirements:
     - jinja2
     - rioxarray
     - lxml
-
+    - mapraster
 test:
   requires:
     - python {{ python_min }}
