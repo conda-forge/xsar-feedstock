@@ -1,6 +1,7 @@
 {% set python_min = "3.10" %}
 {% set name = "xsar" %}
-{% set version = "2025.6.12" %}
+{% set version = "2026.1.6" %}
+
 
 package:
   name: {{ name|lower }}
@@ -8,7 +9,8 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/xsar-{{ version }}.tar.gz
-  sha256: 5daf7f66d846392e54955b50e4796ce8977c591a3068f83240241d9613e399ea
+  sha256: 251537a52966b8781827e8629c85824e5139f7950a7c98a2a89db12620d786f6
+
 
 build:
   number: 0
@@ -32,7 +34,6 @@ requirements:
     - cartopy
     - fiona
     - pyproj
-    - xarray-datatree >=0.0.9
     - numpy
     - scipy
     - shapely
@@ -44,6 +45,7 @@ requirements:
     - jinja2
     - rioxarray
     - lxml
+    - mapraster
 
 test:
   requires:
