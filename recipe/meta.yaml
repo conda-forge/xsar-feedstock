@@ -31,7 +31,6 @@ requirements:
     - xarray
     - affine
     - rasterio
-    - cartopy
     - fiona
     - pyproj
     - numpy
