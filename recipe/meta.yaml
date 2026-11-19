@@ -45,7 +45,11 @@ requirements:
     - rioxarray
     - lxml
     - mapraster
-
+    
+  run_constrained:
+    - xarray-safe-s1 >=2026.11.18
+    - xradarsat2 >=2026.11.18
+    
 test:
   requires:
     - python {{ python_min }}
