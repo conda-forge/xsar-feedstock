@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "xsar" %}
-{% set version = "2026.8.31" %}
+{% set version = "2026.11.19" %}
 
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/xsar-{{ version }}.tar.gz
-  sha256: 3a905ba551808815348ab4105c046e9ac147c9982881a221c08fecb389e0bda5
+  sha256: 652e3eb7bc1eaf2ef37aa9d9e6a4c8292556c278174f93d1c596b90ea7f22206
 
 
 build:
